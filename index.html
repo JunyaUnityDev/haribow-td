@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>HARIBOW TD — Minimal Tower Defense</title>
+  <link rel="stylesheet" href="td/style.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <h1>HARIBOW TD</h1>
+    <div class="ui">
+      <span>Wave: <strong id="wave">1</strong></span>
+      <span>HP: <strong id="hp">20</strong></span>
+      <span>Gold: <strong id="gold">100</strong></span>
+      <button id="startBtn">Start</button>
+      <select id="towerType">
+        <option value="basic">Basic (50)</option>
+        <option value="slow">Slow (70)</option>
+        <option value="sniper">Sniper (90)</option>
+      </select>
+      <span class="hint">Click a tile to place. R to remove.</span>
+    </div>
+  </header>
+  <main>
+    <canvas id="game" width="832" height="576"></canvas>
+  </main>
+  <script type="module" src="td/main.js"></script>
+</body>
+</html>
